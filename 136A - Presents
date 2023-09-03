@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int a, i, j;
+    cin >> a;
+    int ar[a];
+    for (i = 0; i < a; i++)
+    {
+        cin >> ar[i];
+    }
+    for (j = 1; j <= a; j++)
+    {
+        for (i = 0; i < a; i++)
+        {
+            if (ar[i] == j)
+            {
+                cout << i + 1 << " ";
+            }
+        }
+    }
+}
